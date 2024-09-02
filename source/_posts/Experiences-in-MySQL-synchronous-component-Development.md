@@ -41,7 +41,7 @@ When data arrives, it's first written to MySQL, and after successful insertion, 
 Disadvantages: There's a chance of write failure, requiring compensation scripts. It has requirements on write order and significantly impacts the business, as every business process that needs dual-table writing needs to write to Elasticsearch.
 
 # Approach 2: Using compoment for writing, without developer effect, automatically synchronize data to Elasticsearch
-We researched several methods, considering the following points:
+We researched several Approaches, considering the following points:
 
 1. Activity: Those with only single-digit attention or never-raised issues can be directly disregarded.
 2. Usability: As is well known, many open-source products may become unusable due to version iterations, such as requiring specific environments, or may even be unusable when first open-sourced.
